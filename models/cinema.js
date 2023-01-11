@@ -49,11 +49,18 @@ Cinema.prototype.checkNoFilmsByYear = function(filmYear) {
 };
 
 
-Cinema.prototype.checkMinLength = function(length) {
-  return this.films.every(film => {
-    return film.length >= length;
-  })
+// Cinema.prototype.checkMinLength = function(length) {
+//   return this.films.every(film => {
+//     return film.length >= length;
+//   })
+// };
+
+//short form
+Cinema.prototype.checkMinLength = function (length) {
+  return this.films.every(film => film.length >= length);
 };
+
+// const getEvens = numbers => numbers.filter(number => number % 2 ===0);
 
 // Cinema.prototype.filterByGenre = film => this.films.genre.filter(film => film.genre)
 

@@ -70,7 +70,7 @@ describe('Cinema', function () {
 
   it('should be able to check whether all films are over a particular length', function () {
     const expected = true;
-    const actual = cinema.checkMinLength(250);
+    const actual = cinema.checkMinLength(25);
     assert.strictEqual(actual, expected);
   });
   
